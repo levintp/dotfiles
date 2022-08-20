@@ -1,0 +1,36 @@
+#
+# Sway idle configuration
+#
+
+# Read `man 5 sway` and `man 5 swayidle` for more information.
+
+
+
+#
+# Variables
+#
+
+# Set idle time constants
+set $lock_time 300
+set $sleep_time 600
+
+# Set lockscreen image
+set $lock_image '~/.config/sway/pictures/yinyan_midnight.webp'
+
+# Set commands too execute on lock, sleep and resume events
+set $lock_cmd 'swaylock --daemonize --ignore-empty-password --image $lock_image'
+set $sleep_cmd 'swaymsg "output * dpms off"'
+set $resume_cmd 'swaymsg "output * dpms on"'
+
+
+
+#
+# Idle handling
+#
+
+# Start the swayidle process with a set of event handlers
+exec swayidle -w 					\
+	timeout 	$lock_time 	$lock_cmd 	\
+	timeout 	$sleep_time 	$sleep_cmd 	\
+	resume 		$resume_cmd 			\
+	before-sleep 	$lock_cmd

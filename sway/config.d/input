@@ -1,0 +1,12 @@
+#
+# Sway input configuration
+#
+
+# Read `man 5 sway` for more information.
+
+
+
+# Initial enable/disable key locks
+
+input * xkb_capslock disable
+input * xkb_numlock enable

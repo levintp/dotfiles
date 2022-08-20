@@ -1,0 +1,19 @@
+#
+# Sway colors configuraition
+#
+
+# Read `man 5 sway` for more information.
+
+
+
+set $bg_bright 	'#82bec4'
+set $br_bright 	'#82bec4'
+set $fg_bright 	'#12293a'
+
+set $bg_dark	'#10131e'
+set $br_dark	'#10131e'
+set $fg_dark	'#c8d9d6'
+
+set $bg_normal	'#2c899c'
+set $br_normal	'#2c899c'
+set $fg_normal	'#0d0a13'

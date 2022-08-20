@@ -1,0 +1,13 @@
+#
+# Sway status Bar configuration
+#
+
+# Read `man 5 sway-bar` for more information.
+
+
+
+#
+# Bar
+#
+
+bar swaybar_command waybar

@@ -1,0 +1,13 @@
+#
+# Sway workspaces configuration
+#
+
+# Read `man 5 sway` for more information.
+
+
+
+#
+# Layout
+#
+
+workspace_layout tabbed

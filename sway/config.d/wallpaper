@@ -1,0 +1,12 @@
+#
+# Sway wallpaper configuration
+#
+
+# Read `man 5 swaybg` for more information.
+
+
+
+# Note: if using `webp` format, the `webp-pixbuf-loader` package is required.
+set $background_image "~/.config/sway/pictures/yinyan_midnight.webp"
+
+output "*" bg $background_image fill

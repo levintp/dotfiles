@@ -1,0 +1,48 @@
+#
+# Sway style configuration
+#
+
+# Read `man 5 sway` for more information.
+
+
+
+include ~/.config/sway/config.d/colors
+
+
+
+#
+# Fonts
+#
+
+# Set the title bar font
+font pango:hack 9
+
+
+
+#
+# Border
+#
+
+# Set border colors
+client.focused 			$br_bright	$bg_bright	$fg_bright
+client.unfocused		$br_dark	$bg_dark	$fg_dark
+client.focused_inactive		$br_dark	$bg_dark	$fg_dark
+client.placeholder		$br_dark        $bg_dark        $fg_dark
+client.urgent			$br_normal	$bg_normal	$fg_normal
+
+# Set border defaults
+default_border 			normal
+default_floating_border	pixel
+
+# Set title bar appearance
+titlebar_padding 7 3
+title_align center
+
+
+
+#
+# Program specific styles
+#
+
+# Set custom kitty style
+for_window [app_id=$term] opacity 0.95
