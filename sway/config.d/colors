@@ -6,14 +6,17 @@
 
 
 
-set $bg_bright 	'#82bec4'
-set $br_bright 	'#82bec4'
-set $fg_bright 	'#12293a'
-
-set $bg_dark	'#10131e'
-set $br_dark	'#10131e'
-set $fg_dark	'#c8d9d6'
-
-set $bg_normal	'#2c899c'
-set $br_normal	'#2c899c'
-set $fg_normal	'#0d0a13'
+#
+# Border colors
+#
+#set $border_bg_placeholder	'#4c566a'
+set $border_bg_focused		'#81a1c1'
+set $border_fg_focused		'#2e3440'
+set $border_bg_unfocused	'#2e3440'
+set $border_fg_unfocused 	'#cacaca'
+set $border_bg_focused_inactive	'#2e3440'
+set $border_fg_focused_inactive	'#cacaca'
+set $border_bg_placeholder	'#2e3440'
+set $border_fg_placeholder	'#cacaca'
+set $border_bg_urgent		'#81a1c1'
+set $border_fg_urgent	 	'#2e3440'
