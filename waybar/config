@@ -1,0 +1,99 @@
+{
+    
+    //
+    // Global settings
+    //
+
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": ["custom/launcher", "sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["temperature", "cpu", "memory", "backlight", "custom/volume", "battery", "network", "custom/powermenu"],
+    "modules-right": ["backlight", "custom/volume", "battery", "network", "custom/powermenu"],
+
+
+
+    //
+    // Left modules
+    //
+
+    "custom/launcher": {
+        "format": "",
+	"tooltip-format": "Launch",
+	"on-click": "wofi --show run | xargs swaymsg exec --",
+        "on-click-right": "killall wofi"
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+	"all-outputs": true,
+	"format": "{value}",
+    },
+
+
+    
+    //
+    // Center modules
+    //
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "format-alt": " {:%Y-%m-%d}",
+	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+
+
+    //
+    // Right modules
+    //
+
+    "temperature": {
+        "critical-threshold": 75,
+        "format": " {temperatureC}°C"
+    },
+    "cpu": {
+        "format": " {usage}%"
+    },
+    "memory": {
+        "format": " {}%"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [""]
+    },
+    "custom/volume": {
+        "format": "{icon} {alt}",
+	"return-type": "json",
+	"signal": 8,
+	"interval": "once",
+	"format-icons": {
+	    "mute": "",
+	    "default": ["", "", ""]
+	},
+	"exec": "/home/levin/.config/waybar/scripts/volume.sh",
+	"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+	"exec-on-event": true,
+    },
+    "battery": {
+        "bat": "BAT0",
+	"interval": 30,
+        "format": "{icon}{capacity}%",
+	"format-icons": [" ", " ", " ", " ", " "],
+	"format-charging": " {capacity}%"
+    },
+    "network": {
+        "format": "network",
+        "format-linked": "{ifname} (No IP)",
+        "format-ethernet": " Connected",
+        "format-wifi": " Connected",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-disconnected": "Disconnected",
+        "tooltip-format-disconnected": "Disconnected"
+    },
+    "custom/powermenu": {
+        "format": " "
+    },
+}

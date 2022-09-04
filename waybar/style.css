@@ -1,0 +1,82 @@
+/*
+ * Waybar style sheet
+ */
+
+/* Read `man 5 waybar` for more information. */
+
+
+* {
+  font-family: Hack, "Symbols Nerd Font";
+  font-size: 11px;
+  min-height: 0;
+}
+
+window#waybar {
+  /* background: #141518; */
+  background: #2e3440;
+  color: #cacaca;
+  /* border-top: 2px solid #2a2a2c; */
+  /* border-bottom: 2px solid #2a2a2c; */
+}
+
+
+
+/*
+ * Left modules
+ */
+
+#custom-launcher {
+  font-size: 12px;
+  /* margin-top: 4px;
+  margin-bottom: 4px; */
+  background: #81a1c1;
+  color: #2e3440;
+  padding: 4 15;
+}
+
+#custom-launcher * {
+}
+
+#workspaces {
+  margin-left: 0px;
+}
+#workspaces button {
+  color: #8a8a8c;
+  padding: 0 10px;
+}
+#workspaces button.focused {
+  color: white; 
+  border-left: 1px solid #81a1c1;
+  border-right: 1px solid #81a1c1;
+  background-color: #181d24;
+  border-radius: 0;
+}
+#workspaces button:hover {
+    color: black;
+    background-color: #ffffff;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+
+
+/*
+ * Center modules
+ */
+
+
+
+/*
+ * Right modules
+ */
+
+.modules-right * {
+  padding: 0 15px;
+}
+.modules-right > *{
+  border-left: 2px solid #2a2a2c;
+  border-radius: 10px;
+}
+
+#network.disconnected {
+  color: #b62d66;
+}
