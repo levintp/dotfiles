@@ -2,6 +2,10 @@
 	font-family: "Hack", monospace;
 }
 
+#input > image.left {
+        -gtk-icon-transform:scaleX(0);
+}
+
 #inner-box {
 	background-color: #383C4A;
 }

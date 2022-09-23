@@ -19,11 +19,10 @@ width=10%
 # Search options
 insensitive=true
 sort_order=default
-prompt=Power menu
 
 # Appearance options
 gtk_dark=true
-orientation=vertical
+prompt=Power menu
 halign=fill
 content_halign=center
 valign=center
