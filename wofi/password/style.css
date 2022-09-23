@@ -1,0 +1,41 @@
+* {
+	font-family: "Hack", monospace;
+}
+
+#input {
+	margin: 5px;
+	border-radius: 0px;
+	border: none;
+	background-color: #2E3440;
+	color: white;
+}
+
+#input > image.left {
+    	-gtk-icon-transform:scaleX(0);
+}
+
+#input > text {
+	padding: 4px;
+}
+
+#inner-box {
+	background-color: #383C4A;
+}
+
+#outer-box {
+	margin: 2px;
+	padding: 10px;
+	background-color: #383E4A;
+}
+
+#entry:nth-child(even){
+        background-color: #383C4A;
+}
+
+#entry:selected {
+        background-color: #383C4A;
+}
+
+#text:selected {
+        background: transparent;
+}

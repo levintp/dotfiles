@@ -1,0 +1,22 @@
+#
+# Wofi configuration - Launch menu
+#
+
+# Read `man 5 wofi` for more information
+
+
+
+normal_window=false
+mode=dmenu
+stylesheet=style.css
+
+# Location and size options
+location=center
+height=10;
+width=30%
+
+# Appearance options
+gtk_dark=true
+prompt=Enter your sudo password
+password=*
+hide_scroll=true
