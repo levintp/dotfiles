@@ -8,6 +8,9 @@
 # Variables
 #
 
+# Configuration directory
+set $confdir /home/levin/.config
+
 # Action keys
 set $alt Mod1
 set $super Mod4
@@ -27,7 +30,7 @@ set $term kitty
 # Set preferable application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run | xargs swaymsg exec --
+set $menu $confdir/wofi/launcher/launch.sh | xargs swaymsg exec --
 
 
 

@@ -1,0 +1,28 @@
+#
+# Wofi configuration - Launch menu
+#
+
+# Read `man 5 wofi` for more information
+
+
+
+normal_window=false
+mode=run
+stylesheet=style.css
+
+# Location and size options
+location=bottom_left
+yoffset=-34
+height=60%
+width=35%
+
+# Search options
+insensitive=true
+sort_order=default
+
+# Launch options
+term=kitty
+
+# Appearance options
+gtk_dark=true
+prompt=Choose an application to launch

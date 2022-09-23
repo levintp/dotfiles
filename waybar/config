@@ -64,12 +64,13 @@
     },
     "custom/volume": {
         "format": "{icon} {alt}",
+	"tooltip-format": "{alt}",
 	"return-type": "json",
 	"signal": 8,
 	"interval": "once",
 	"format-icons": {
-	    "mute": "",
-	    "default": ["", "", ""]
+	    "mute": "婢",
+	    "default": [" ", " ", " "]
 	},
 	"exec": "/home/levin/.config/waybar/scripts/volume.sh",
 	"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -78,9 +79,11 @@
     "battery": {
         "bat": "BAT0",
 	"interval": 30,
-        "format": "{icon}{capacity}%",
-	"format-icons": [" ", " ", " ", " ", " "],
-	"format-charging": " {capacity}%"
+        "format": "{icon} {capacity}%",
+	//"format-icons": [" ", " ", " ", " ", " "],
+	"format-icons": ["", "", "", "", "", "", "", "", "", ""],
+	"format-charging": "{icon} {capacity}%",
+	"format-charging-icons": [" ", " ", " ", " ", " ", " ", " "]
     },
     "network": {
         "format": "network",
@@ -94,6 +97,7 @@
         "tooltip-format-disconnected": "Disconnected"
     },
     "custom/powermenu": {
-        "format": " "
+        "format": " ",
+	"on-click": "/home/levin/.config/wofi/powermenu/launch.sh"
     },
 }
