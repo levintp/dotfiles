@@ -15,7 +15,7 @@ set $lock_time 300
 set $sleep_time 600
 
 # Set lockscreen image
-set $lock_image '~/.config/sway/pictures/yinyan_midnight.webp'
+set $lock_image '~/.config/sway/pictures/singularity.png'
 
 # Set commands too execute on lock, sleep and resume events
 set $lock_cmd 'swaylock --daemonize --ignore-empty-password --image $lock_image'
@@ -34,3 +34,5 @@ exec swayidle -w 					\
 	timeout 	$sleep_time 	$sleep_cmd 	\
 	resume 		$resume_cmd 			\
 	before-sleep 	$lock_cmd
+
+bindsym ctrl+alt+l exec $lock_cmd
