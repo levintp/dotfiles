@@ -92,9 +92,10 @@
         "format-wifi": " Connected",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
 
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}",
         "format-disconnected": "Disconnected",
-        "tooltip-format-disconnected": "Disconnected"
+        "tooltip-format-disconnected": "Disconnected",
+	"on-click": "/home/levin/.config/wofi/wifimenu/launch.sh"
     },
     "custom/powermenu": {
         "format": " ",
