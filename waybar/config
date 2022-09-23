@@ -20,7 +20,7 @@
     "custom/launcher": {
         "format": "",
 	"tooltip-format": "Launch",
-	"on-click": "wofi --show run | xargs swaymsg exec --",
+	"on-click": "/home/levin/.config/wofi/launcher/launch.sh | xargs swaymsg exec --",
         "on-click-right": "killall wofi"
     },
     "sway/workspaces": {
