@@ -1,0 +1,35 @@
+* {
+	font-family: "Hack", monospace;
+}
+
+#inner-box {
+	background-color: #383C4A;
+}
+
+#outer-box {
+	margin: 2px;
+	padding: 10px;
+	background-color: #383E4A;
+}
+
+#scroll {
+	margin: 5px;
+}
+
+#text {
+	padding: 4px;
+	color: white;
+	font-size: 72px;
+}
+
+#entry:nth-child(even){
+	background-color: #404552;
+}
+
+#entry:selected {
+	background-color: #4C566A;
+}
+
+#text:selected {
+	background: transparent;
+}
