@@ -12,7 +12,7 @@ stylesheet=style.css
 
 # Location and size options
 location=bottom_left
-yoffset=-34
+yoffset=-66
 height=60%
 width=35%
 
