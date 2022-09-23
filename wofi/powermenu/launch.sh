@@ -21,10 +21,10 @@ action="$(echo -e "$ACTION_LIST"| wofi --dmenu --conf ~/.config/wofi/powermenu/c
 
 case $action in
         $POWEROFF)
-		~/scripts/graphical_sudo.sh shutdown
+		~/.config/scripts/graphical_sudo.sh shutdown
 		;;
         $REBOOT)
-		~/scripts/graphical_sudo.sh reboot
+		~/.config/scripts/graphical_sudo.sh reboot
 		;;
         $LOCK)
 		~/.config/sway/scripts/lock.sh
