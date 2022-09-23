@@ -25,4 +25,4 @@ term=kitty
 
 # Appearance options
 gtk_dark=true
-prompt=Choose an application to launch
+prompt=Search applications to execute
