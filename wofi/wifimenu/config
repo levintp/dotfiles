@@ -1,0 +1,30 @@
+#
+# Wofi configuration - Launch menu
+#
+
+# Read `man 5 wofi` for more information
+
+
+
+normal_window=false
+mode=dmenu
+#stylesheet=style.css
+
+# Location and size options
+location=bottom_right
+yoffset=-58
+xoffset=-56
+width=20%
+
+# Search options
+insensitive=true
+sort_order=alphabetical
+
+# Appearance options
+gtk_dark=true
+orientation=vertical
+halign=fill
+content_halign=center
+valign=center
+#hide_search=true
+hide_scroll=true
