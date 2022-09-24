@@ -2,3 +2,4 @@ systemd/
 dconf/
 gtk-3.0/
 nvim/packer/site/pack/packer/start/
+nvim/plugin/packer_compiled.lua
