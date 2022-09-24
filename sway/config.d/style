@@ -45,4 +45,4 @@ title_align center
 #
 
 # Set custom kitty style
-for_window [app_id=$term] opacity 0.95
+#for_window [app_id=$term] opacity 0.95
