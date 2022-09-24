@@ -17,3 +17,5 @@ python3
 python-pip
 gcc
 gcc-libs
+rust
+rust-src
