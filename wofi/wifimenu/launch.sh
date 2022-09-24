@@ -12,7 +12,9 @@ STATION="wlan0"
 NETWORKS=""
 EXTRA_FLAGS=""
 
-for network in "$(nmcli --get-values SSID,RATE,SIGNAL,SECURITY --colors no dev wifi list)"; do
+OLDIFS=$IFS
+IFS=$'\n'
+for network in $(nmcli --get-values SSID,RATE,SIGNAL,SECURITY --colors no dev wifi list); do
 	ssid=$(echo $network | cut -d':' -f1)
 	rate=$(echo $network | cut -d':' -f2)
 	signal=$(echo $network | cut -d':' -f3)
@@ -22,8 +24,9 @@ for network in "$(nmcli --get-values SSID,RATE,SIGNAL,SECURITY --colors no dev w
 	network_desc="${signal}% - $ssid ($security)"
 
 	[ -z "$NETWORKS" ] || NETWORKS+="\n"
-	NETWORKS="$network_desc"
+	NETWORKS+="$network_desc"
 done
+IFS=$OLDIFS
 
 network_desc="$(echo -e "$NETWORKS"| wofi --dmenu --conf ~/.config/wofi/wifimenu/config --style ~/.config/wofi/wifimenu/style.css)"
 [ -z "$network_desc" ] && exit 1
