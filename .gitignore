@@ -1,3 +1,4 @@
 systemd/
 dconf/
 gtk-3.0/
+nvim/packer/site/pack/packer/start/
