@@ -1,0 +1,19 @@
+git
+tar
+gzip
+unzip
+curl
+wget
+neovim
+sway
+waybar
+neofetch
+kitty
+wofi
+nerd-fonts 1000em
+awesome font 6
+ripgrep
+python3
+python-pip
+gcc
+gcc-libs
