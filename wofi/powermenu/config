@@ -15,6 +15,7 @@ location=bottom_right
 yoffset=-58
 xoffset=-56
 width=10%
+lines=3
 
 # Search options
 insensitive=true
