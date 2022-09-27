@@ -176,3 +176,6 @@ bindsym XF86AudioMute exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -R
 # Brightness keys
 bindsym XF86MonBrightnessUp exec /home/levin/.config/waybar/scripts/brightness-up.sh
 bindsym XF86MonBrightnessDown exec /home/levin/.config/waybar/scripts/brightness-down.sh
+
+# Screenshot
+bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy -t image/png
