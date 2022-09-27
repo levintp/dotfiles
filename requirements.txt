@@ -19,3 +19,4 @@ gcc
 gcc-libs
 rust
 rust-src
+fish
