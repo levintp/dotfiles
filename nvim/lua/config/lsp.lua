@@ -12,10 +12,12 @@ lspconf = require('lspconfig')
 -- +-------------------------------------+
 -- |      Register Language Servers      |
 -- +-------------------------------------+
-lspconf.pyright.setup{}
-lspconf.clangd.setup{}
-lspconf.luau_lsp.setup{}
-lspconf.rust_analyzer.setup{}
+local nvim_cmp_capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+lspconf.pyright.setup { capabilities = nvim_cmp_capabilities }
+lspconf.clangd.setup { capabilities = nvim_cmp_capabilities }
+lspconf.luau_lsp.setup { capabilities = nvim_cmp_capabilities }
+lspconf.rust_analyzer.setup { capabilities = nvim_cmp_capabilities }
+lspconf.taplo.setup { capabilities = nvim_cmp_capabilities }
 
 
 
